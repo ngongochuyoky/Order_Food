@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".DetailProductActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"/>
+    //top
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/imgProduct1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pizza">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="@drawable/radius"
+                    >
+                    //cum 1
+                    <LinearLayout
+                        android:layout_marginTop="150dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:background="@drawable/background_white">
+                        <TextView
+                            android:id="@+id/txtName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Margherita"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/oswald_semibold"/>
+                        //Cai 2
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="Giá tiền: "/>
+                            <TextView
+                                android:id="@+id/txtPrice1"
+                                android:layout_marginLeft="60dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20000"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:textColor="#1DF826"/>
+
+                            <ImageView
+                                android:layout_marginLeft="180dp"
+                                android:layout_width="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_baseline_star_24"/>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.3"
+                                android:textStyle="bold"/>
+
+                        </RelativeLayout>
+                        //cai 3
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+                            <Button
+                                android:id="@+id/addCart1"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_cam"
+                                android:fontFamily="@font/oswald_semibold"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorOrange"
+                                android:text="Thêm giỏ hàng"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    //Cum 2
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:background="@drawable/background_white">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả chi tiết"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/oswald_semibold"/>
+                        //Cai 2
+
+                        <TextView
+                            android:id="@+id/txtDes1"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Margherita là một loại pizza đặc trưng đến từ vùng Napoli, được làm bằng cà chua San Marzano, phô mai mozzarella, húng quế tươi, muối và dầu ô liu thêm nguyên chất. Theo truyền thống, nó được làm bằng fior di latte (mozzarella sữa bò) chứ không phải bằng mozzarella sữa trâu. "/>
+                    </LinearLayout>
+                    //Cum 3
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:background="@drawable/background_white">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Đặt hàng bằng cách gì?"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/oswald_semibold"/>
+                        //Cai 2
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Kích vào nút 'Thêm Giỏ Hàng'"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Vào giỏ hàng kích nút 'Thanh toán'"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Điền thông tin đầy đủ"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Chọn phương thức thanh toán và ok"/>
+                    </LinearLayout>
+                    //
+                    <RelativeLayout
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/btnCart"
+                        android:background="@color/colorOrange"
+                        android:layout_height="45dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giỏ hàng của tôi"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/oswald_semibold"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#fff"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Xem >>"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+
+                    //Liner lon nhi
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_account">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserInfo"
+                    android:layout_width="100dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@color/colorLightGrey"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ngo Ngoc Huy"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#F6F2F2"
+                    android:textSize="30sp"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chúc bạn một ngày tốt lành"
+                    android:layout_below="@+id/txtName"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#97F6F2F2"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/editAccount"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btnedit"
+                    android:layout_marginTop="230dp"
+                    android:gravity="center"
+                    android:text="Chỉnh sửa thông tin"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin người dùng"
+            android:textSize="28sp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/oswald_semibold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/account1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="NAME"
+                        android:paddingLeft="4dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Ngô Ngọc Huy"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#292727"
+                android:layout_marginBottom="10dp"/>
+            //phone
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/phone"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="SỐ ĐIỆN THOẠI"
+                        android:paddingLeft="4dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="0000000000"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#292727"
+                android:layout_marginBottom="10dp"/>
+            //Email
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/email"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="EMAIL"
+                        android:paddingLeft="4dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="huyngo.05042000@gmail.com"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#292727"
+                android:layout_marginBottom="10dp"/>
+            //Địa chỉ
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/diachi"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="ĐỊA CHỈ"
+                        android:paddingLeft="4dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Bạn hãy cập nhập địa chỉ ở trên"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#292727"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnLogOut"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="#000"
+            android:padding="10dp"
+            android:text="Đăng xuất"/>
+    </LinearLayout>
+
+
+</ScrollView>
