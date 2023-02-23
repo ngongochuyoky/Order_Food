@@ -4,6 +4,8 @@ OrderFood is a food ordering app. It can help customers order food at home, and 
 ## The function of the application:
 - View products, order, cart, checkout
 - Register, login, logout, view, edit, delete and upload avatars for accounts
+## Requirements to run the application
+Need to build APIs, which will return to the OrderFood application the data that the application needs.
 ## Database Diagram Design 
 ![appfood](https://user-images.githubusercontent.com/54812014/220972446-a527aa09-12e2-4278-b3e6-a3f85a74c9d8.svg)
 ## Application images
