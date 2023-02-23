@@ -1,7 +1,7 @@
 # Order Food App
 ## Introduction
 OrderFood is a food ordering app. It can help customers order food at home, and the app works on mobile devices.
-## The function of the application:
+## The function of the application
 - View products, order, cart, checkout
 - Register, login, logout, view, edit, delete and upload avatars for accounts
 ## Requirements to run the application
